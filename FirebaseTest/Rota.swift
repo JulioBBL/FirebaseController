@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import CoreLocation
+
+public class Rota {
+    var origem: CLLocation
+    var destino: CLLocation
+    var tempoPercurso: Int
+    
+    init() {
+        self.origem = CLLocation()
+        self.destino = CLLocation()
+        self.tempoPercurso = 0
+    }
+}
